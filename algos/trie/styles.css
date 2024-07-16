@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
-
 :root {
   --background-color: #212833;
   --header-background-color: #31363F;
@@ -12,8 +9,6 @@
   --end-of-word-node-color: #00911d;
   --stroke-color: #ff7d12;
   --line-color: #099b96;
-  
-
 }
 
 * {
@@ -26,12 +21,11 @@ html,
 body {
   height: 100%;
   min-height: 100%;
-
 }
 
 body {
   background-color: var(--background-color);
-  font-family: nunito, sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .container {
@@ -55,43 +49,39 @@ a {
   text-decoration: none;
 }
 
-#title {
-  font-size: 27px;
-  color: var(--text-color);
-  font-weight: bold;
-  display: flex;
-
-  
-}
-
 #OperationContainer {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .button {
-  width: 60px;
-  padding: 15px;
+  width: 80px;
+  padding: 10px 15px;
   border: none;
   background-color: var(--highlight-color);
-  color: rgb(248, 248, 248);
+  color: var(--text-color);
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  border-radius: 5px;
-  margin: 0px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
 }
 
 .button:hover {
-  background-color: rgb(84, 68, 68);
+  background-color: #6b4cf0;
+  transform: translateY(-2px);
 }
 
 #InsertNodeField,
 #DeleteNodeField {
-  width: 120px;
-  padding: 5px;
+  width: 140px;
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .Canvas {
@@ -121,12 +111,10 @@ svg {
   fill: var(--node-color);
   stroke: var(--stroke-color);
   stroke-width: 1px;
-  
 }
 
 .node text {
   font-size: 22px;
-   padding:200px;
   fill: rgb(250, 7, 7);
 }
 
@@ -163,4 +151,12 @@ line {
 
 text {
   fill: var(--node-color);
+}
+
+#title {
+  text-align: center;
+  font-size: 27px;
+  color: var(--text-color);
+  padding-top: 20px;
+  font-weight: bold;
 }

@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "", sans-serif;
 }
 
 body {
@@ -15,7 +15,11 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    background-color: rgb(231, 231, 231);
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    /* background-image:  radial-gradient(#000000 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#000000 0.7000000000000001px, #e5e5f7 0.7000000000000001px); */
+    background-size: 28px 28px;
+    background-position: 0 0,14px 14px;
 }
 
 header {
@@ -29,7 +33,7 @@ header {
 }
 
 .heading {
-    color: green;
+    color: black;
 }
 
 .container {
@@ -73,7 +77,7 @@ header {
     height: 50px;
     width: 140px;
     font-size: 25px;
-    background-color: green;
+    background-color:rgb(220, 170, 108); 
     color: white;
     border-radius: 10px;
     cursor: pointer;
@@ -82,7 +86,7 @@ header {
 }
 
 .disable-button {
-    background-color: rgb(0, 59, 0);
+    background-color: brown;
 }
 
 .container-header button:active {
@@ -125,7 +129,7 @@ header {
 .ele {
     height: 80px;
     width: 170px;
-    background-color: green;
+    background-color:brown;
     color: white;
     border: 4px black solid;
     border-radius: 10px;
@@ -143,23 +147,6 @@ header {
     animation: dequeueAnimation 0.3s infinite linear;
 }
 
-@keyframes enqueueAnimation {
-    0% {
-        background-color: green;
-    }
-    100% {
-        background-color: rgb(17, 92, 255);
-    }
-}
-
-@keyframes dequeueAnimation {
-    0% {
-        background-color: green;
-    }
-    100% {
-        background-color: rgb(255, 15, 59);
-    }
-}
 
 .info {
     height: 470px;
@@ -182,7 +169,7 @@ header {
     margin-top: 30px;
     padding: 10px;
     border-radius: 10px;
-    background-color: bisque;
+    background-color: rgb(220, 170, 108);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -213,3 +200,6 @@ header {
         background-color: rgb(255, 15, 59);
     }
 }
+
+
+

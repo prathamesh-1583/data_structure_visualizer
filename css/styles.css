@@ -14,6 +14,7 @@ html, body {
   background-color: #222831;
   font-family: Nunito;
   color: #EEEEEE;
+  
 }
 #main {
   height: 100%;
@@ -39,6 +40,7 @@ html, body {
   align-items: center;
   text-align: center;
   padding: 20px;
+  margin-left: 100px;
 }
 
 
@@ -54,6 +56,7 @@ html, body {
   height:400px;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 .algo-container:hover {
   transform: scale(1.05);
