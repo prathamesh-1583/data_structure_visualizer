@@ -1,60 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="Home/styles.css" />
     <link rel="icon" href="Home/assets/logo.png" type="image/png">
-    <title>Data Structrue Visulizer</title>
-  </head>
-  <body>
+    <title>Data Structure Visualizer</title>
+    <style>
+        .counter-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .counter-container h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .counter-container p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+<body>
     <nav>
-      <div class="nav__header">
-       
-          <img class="logo_nav" src="Home/assets/logo.png" alt="logo"/>
-       
-        <div class="nav__menu__btn" id="menu-btn">
-          <i class="ri-menu-line"></i>
+        <div class="nav__header">
+            <img class="logo_nav" src="Home/assets/logo.png" alt="logo"/>
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
         </div>
-      </div>
-      <ul class="nav__links" id="nav-links">
-        <li><a href="index_main.html">HOME</a></li>
-        <li><a href="about.html">ABOUT US</a></li>
-      </ul>
-      <div class="nav__btns">
-      </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="index_main.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+        </ul>
+        <div class="nav__btns"></div>
     </nav>
     <div class="container">
-      <div class="container__left">
-        <h1>Visualize  <strong><br>Data <br>Structrue </br></strong></h1>
-        <div class="container__btn">
-          <a href="index_main.html"
-          class="btn">{ <i class="ri-play-fill"></i> }</a>
+        <div class="container__left">
+            <h1>Visualize  <strong><br>Data <br>Structure </strong></h1>
+            <div class="container__btn">
+                <a href="index_main.html" class="btn">{ <i class="ri-play-fill"></i> }</a>
+            </div>
         </div>
-      </div>
-      <div class="container__right">
-        <div class="images">
-          <img src="Home/assets/image2.png" alt="graph" class="tent-1" />
-          <img src="Home/assets/image1.png" alt="tree" class="tent-2" />
+        <div class="container__right">
+            <div class="images">
+                <img src="Home/assets/image2.png" alt="graph" class="tent-1" />
+                <img src="Home/assets/image1.png" alt="tree" class="tent-2" />
+            </div>
+            <div class="content">
+                <h2>DATA STRUCTURE VISUALIZER</h2>
+                <h3>Enhance Your Understanding of Algorithms</h3>
+                <p>
+                    Our Data Structure Visualizer is designed for learners and developers who want to grasp the fundamental concepts of data structures. 
+                    With interactive visualizations, you can explore arrays, linked lists, trees, and more, making complex ideas easier to understand and apply.
+                </p>
+            </div>
         </div>
-        <div class="content">
-          <h2>DATA STRUCTURE VISUALIZER</h2>
-<h3>Enhance Your Understanding of Algorithms</h3>
-<p>
-  Our Data Structure Visualizer is designed for learners and developers who want to grasp the fundamental concepts of data structures. 
-  With interactive visualizations, you can explore arrays, linked lists, trees, and more, making complex ideas easier to understand and apply.
-</p>
-
+        <div class="counter-container">
+            <h1>Visitor's Count</h1>
+            <p id="visitorCount">0</p>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const visitorCountElement = document.getElementById('visitorCount');
+                    let visitorCount = localStorage.getItem('visitorCount');
+                    if (visitorCount === null) {
+                        visitorCount = 0;
+                    } else {
+                        visitorCount = parseInt(visitorCount, 10);
+                    }
+                    visitorCount++;
+                    localStorage.setItem('visitorCount', visitorCount);
+                    visitorCountElement.textContent = visitorCount;
+                });
+            </script>
         </div>
-      </div>
-      
     </div>
-
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="Home/main.js"></script>
-  </body>
+</body>
 </html>
