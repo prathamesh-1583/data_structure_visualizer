@@ -1,5 +1,3 @@
-# data_struture_visualizer
-
 # Data Structure Visualizer
 
 **Data Structure Visualizer** is an innovative web-based tool designed to help students, educators, and professionals understand and interact with data structures in a dynamic and visually engaging way. This project aims to bridge the gap between theoretical knowledge and practical application by providing a hands-on approach to learning complex data structures.
