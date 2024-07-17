@@ -101,6 +101,7 @@ a {
   align-self: flex-end;
   transition: 0.2s transform ease;
   position: absolute;
+  border-radius: 5px;
 }
 .barValue {
   margin-right: 1px;

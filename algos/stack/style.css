@@ -24,12 +24,15 @@ header {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    margin: -20px;
 }
 .heading {
     margin-top: 25px;
     color: black;
     font-size: 25px;
     padding-top: 5px;
+    padding-bottom: 10px;
+    
 }
 
 .container {

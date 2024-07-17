@@ -35,30 +35,39 @@ a {
   margin-top: -35px;
   margin-right: 50px;
   padding-left: 20px;
-  
+            /* Standard */
+  background: none;          /* Remove default background */
+  border: none;
   height: 40px;
   width: 200px;
-  border-radius: 5px;
+  border-radius: 10px;
   background: #161824;
   color: white;
   outline: none;
+  content: '▼'; 
 
 }
+
+
+
 
 #indicator-container {
   display: flex;
   background-color: cornflowerblue;
+  border-radius: 7px;
 }
 .indicator {
   display: flex;
   /* color: white; */
   font-weight: bold;
   margin: 10px 20px;
+  border-radius: 5px;
 }
 .indicator-block {
   width: 20px;
   height: 20px;
   margin-right: 5px;
+  border-radius: 5px;
 }
 #start-indicator {
   background-color: rgb(90, 255, 7);
@@ -111,6 +120,7 @@ a {
 .grid {
   margin: 1em auto;
   border-collapse: collapse;
+  
 }
 .grid td {
   cursor: pointer;

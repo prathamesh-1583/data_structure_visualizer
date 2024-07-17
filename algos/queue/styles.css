@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "", sans-serif;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
 }
 
 body {
@@ -20,6 +19,7 @@ body {
     /* background-image:  radial-gradient(#000000 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#000000 0.7000000000000001px, #e5e5f7 0.7000000000000001px); */
     background-size: 28px 28px;
     background-position: 0 0,14px 14px;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 header {
@@ -30,6 +30,8 @@ header {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    margin: -20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .heading {
@@ -78,11 +80,12 @@ header {
     width: 140px;
     font-size: 25px;
     background-color:rgb(220, 170, 108); 
-    color: white;
+    color: rgb(19, 14, 14);
     border-radius: 10px;
     cursor: pointer;
     transition: 0.2s;
     border: none;
+    font-weight: 500;
 }
 
 .disable-button {
@@ -114,10 +117,10 @@ header {
 .main-queue-bucket {
     height: 450px;
     width: 200px;
-    border-width: 0 4px 4px 4px;
+    border-width: 0px 4px 0px 4px;
     border-color: black;
     border-style: solid;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0px;
     display: flex;
     justify-content: end;
     align-items: center;
