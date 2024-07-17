@@ -126,7 +126,7 @@ svg {
 
 .endOfWordNode text {
   font-size: 23px;
-  fill: var(--node-color);
+  fill: black;
 }
 
 .highlightedNode circle {
