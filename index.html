@@ -64,24 +64,6 @@
                 </p>
             </div>
         </div>
-        <div class="counter-container">
-            <h1>Visitor's Count</h1>
-            <p id="visitorCount">0</p>
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                    const visitorCountElement = document.getElementById('visitorCount');
-                    let visitorCount = localStorage.getItem('visitorCount');
-                    if (visitorCount === null) {
-                        visitorCount = 0;
-                    } else {
-                        visitorCount = parseInt(visitorCount, 10);
-                    }
-                    visitorCount++;
-                    localStorage.setItem('visitorCount', visitorCount);
-                    visitorCountElement.textContent = visitorCount;
-                });
-            </script>
-        </div>
     </div>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="Home/main.js"></script>
