@@ -14,7 +14,6 @@
 
 - **Educational Resources**
   - Built-in tutorials and examples to guide users through different data structures and their operations.
-  - Explanatory notes and tips to enhance understanding and learning.
 
 - **Real-World Applications**
   - Includes scenarios and problems that mimic real-world applications to show the practical utility of different data structures.
