@@ -14,15 +14,6 @@
 
 - **Educational Resources**
   - Built-in tutorials and examples to guide users through different data structures and their operations.
-  - Explanatory notes and tips to enhance understanding and learning.
-
-- **Customizable Experience**
-  - Customize the visual appearance of the data structures to suit your preferences.
-  - Supports various themes and color schemes for a comfortable and personalized user experience.
-
-- **Collaborative Learning**
-  - Share work with peers or instructors for collaborative learning and feedback.
-  - Planned integration with popular learning management systems and collaboration platforms.
 
 - **Real-World Applications**
   - Includes scenarios and problems that mimic real-world applications to show the practical utility of different data structures.
